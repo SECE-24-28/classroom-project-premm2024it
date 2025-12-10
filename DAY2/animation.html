@@ -1,0 +1,35 @@
+<style>
+.box {
+  width: 50px;
+  height: 50px;
+  background: red;
+animation: move 3s ease 0s infinite alternate;
+}
+.box1 {
+  width: 50px;
+  height: 50px;
+  background: blue;
+animation: move-down 3s ease 0s infinite alternate;
+}
+
+@keyframes move {
+  0% { transform: translateX(0px); }
+  100% { transform: translateX(500px); }
+
+  0%{transform:scale(2)}
+  
+
+  
+
+}
+@keyframes move-down {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(500px); }
+  0%{transform:skew(50deg)}
+ 
+}
+
+</style>
+
+<div class="box"></div>
+<div class="box1"></div>
